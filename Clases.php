@@ -1,6 +1,6 @@
 <?php
 
-Class Consolas {
+Class Consolas{
     private $id;
     private $nombre;
     private $precio;
@@ -29,6 +29,15 @@ Class Consolas {
     }
     setPrecio(){
         $this->precio = $precio;
+    }
+}
+
+class Sony extends Consolas{
+    private $numero;
+
+    public function __construct($numero){
+        parent::__construct($id, $nombre, $precio);
+        
     }
 }
 
