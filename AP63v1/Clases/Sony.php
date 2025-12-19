@@ -8,11 +8,15 @@ class Sony extends Consolas{
         $this->numero = $numero;
     }
 
-    getNumero(){
-        return $this->numero;
+    public function getNumero(){
+        if($this->numero==0){
+            return "4";
+        }else{
+            return "5";
+        } 
     }
 
-    setNumero(){
+    public function setNumero(){
         $this->numero = $numero;
     }
 }

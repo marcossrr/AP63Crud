@@ -11,23 +11,20 @@ Class Consolas{
         $this->precio = $precio;
     }
 
-    getId(){
+    public function getId(){
         return $this->id;
     }
-    getNombre(){
+    public function getNombre(){
         return $this->nombre;
     }
-    getPrecio(){
+    public function getPrecio(){
         return $this->precio;
     }
 
-    setId(){
-        $this->id = $id;
-    }
-    setNombre(){
+    public function setNombre($nombre){
         $this->nombre = $nombre;
     }
-    setPrecio(){
+    public function setPrecio($precio){
         $this->precio = $precio;
     }
 }

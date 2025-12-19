@@ -8,11 +8,15 @@ class Nintendo extends Consolas{
     $this->version = $version;
     }
 
-    getVersion(){
-        return $this->version;
+    public function getVersion(){
+        if($this->version==0){
+            return "Sobremesa";
+        }else{
+            return "Portatil";
+        } 
     }
 
-    setVersion(){
+    public function setVersion($version){
         $this->version = $version;
     }
 }

@@ -3,12 +3,12 @@
 class GestorProducto{
     private $productos;
 
-    public function agregar(Consola $p) {
+    public function agregar(Consolas $p) {
         $this->productos[] = $p;
     }
 
     public function listar(){
-        return $this->producto;
+        return $this->productos;
     }
 
     public function buscar($id) {
@@ -18,12 +18,12 @@ class GestorProducto{
         return null;
     }
 
-    public function actualizar($id, $nombre, $precio, $version, $numero) {
+    public function actualizar($id, $nombre, $precio, $version) {
         foreach ($this->productos as $p) {
             if ($p->getId() == $id) {
                 $p->setNombre($nombre);
                 $p->setPrecio($precio);
-                $p->setElectrica($electrica);
+                $p->setVersion($version);
                 return true;
             }
         }
