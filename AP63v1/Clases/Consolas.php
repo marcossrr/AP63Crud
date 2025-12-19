@@ -32,13 +32,4 @@ Class Consolas{
     }
 }
 
-class Sony extends Consolas{
-    private $numero;
-
-    public function __construct($numero){
-        parent::__construct($id, $nombre, $precio);
-        
-    }
-}
-
 ?>
